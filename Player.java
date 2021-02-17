@@ -30,11 +30,8 @@ public class Player {
         return cards;
     }
 
-    public int placeAbet() {
-        Scanner sc = new Scanner(System.in);
-        int bet = sc.nextInt();
+    public void placeAbet(int bet) {
         asset -= bet;
-        return bet;
     }
 
     public void drawCards(Computer c) {
